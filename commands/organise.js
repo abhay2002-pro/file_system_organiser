@@ -1,10 +1,11 @@
 const fs = require("fs");
 const path = require("path");
+const types = require("../utility").types;
 
-function organiseFn(dirPath) {
+function organiseFn(dirPath) { 
   let destPath = path.join(dirPath, "organised_files");
   if (dirPath == undefined) {
-    desPath = process.cwd();
+    destPath = process.cwd();
     return;
   } else {
     let doesExist = fs.existsSync(dirPath);
@@ -27,7 +28,6 @@ function organise(src, dest) {
     let isFile = fs.lstatSync(childAddress).isFile();
     if (isFile) {
       let category = getCategory(content[i]);
-      console.log(category);
       sendFiles(childAddress, dest, category);
     }
   }
