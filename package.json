@@ -1,6 +1,6 @@
 {
-  "name": "file_system_organiser",
-  "version": "1.0.0",
+  "name": "files-organiser",
+  "version": "1.1.0",
   "description": "",
   "main": "main.js",
   "scripts": {

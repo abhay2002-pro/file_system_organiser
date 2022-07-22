@@ -13,8 +13,8 @@
 ### Supported operating systems :- 
 ##### Windows, Mac OS,Linux
 
+### Available functions:
 ```
-Available functions:
     filesorganiser tree <directory-path>
     filesorganiser organize <directory-path>
     filesorganiser help
